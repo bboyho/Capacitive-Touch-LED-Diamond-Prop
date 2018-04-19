@@ -12,7 +12,7 @@ Repository Contents
 Documentation
 --------------
 * **[Project Guide](https://learn.sparkfun.com/tutorials/interactive-3d-printed-lit-diamond-prop)** - Project guide for the interactive 3D Printed Lit Diamond Prop.
-
+* **[3D Model](https://www.thingiverse.com/thing:2522547)** - 3D model used to print a diamond.
 
 License Information
 -------------------
