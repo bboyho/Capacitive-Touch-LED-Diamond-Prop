@@ -1,5 +1,5 @@
 /*
-  Interative 3D Printed Lit Diamond
+  Interative 3D Printed LED Diamond
   by Ho Yun "Bobby" Chan
   February 1st, 2018
   Code to control high power 12V LED strip segments using n-channel mosfet. A button press
