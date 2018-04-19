@@ -1,13 +1,13 @@
 /*
-  Illuminating LED Pumpkin
+  Interative 3D Printed Lit Diamond
   by Ho Yun "Bobby" Chan
-  Otober 17th, 2016
-  Code to control high power 12V LED strip segments using npn BJT. A button press
+  February 1st, 2018
+  Code to control high power 12V LED strip segments using n-channel mosfet. A button press
   changes the state of the LEDs (color and pattern).
 */
 
-int ledR = 5;//hardware PWM //pin 0 on ATtiny85
-int ledG = 6;//hardware PWM //pin 1 on ATtiny85
+int ledR = 5;//hardware PWM 
+int ledG = 6;//hardware PWM
 int ledB = 9; //hardware PWM
 
 int ledMode = 0; //color mode to control LEDs
@@ -22,10 +22,12 @@ int counter = 0;
 int blinkPress = 0;
 int blinkRate = 750;
 
+//color
 const int button1Pin = 2;
 boolean prev_button1State = false;
 boolean current_button1State = false;
 
+//pattern (i.e. on/off, blink, fade)
 const int button2Pin = 3;
 boolean prev_button2State = false;
 boolean current_button2State = false;
@@ -146,11 +148,11 @@ void loop() {
 }//END LOOP
 
 /*
-  ROYGBIV
+  ROYGBIV...
   a 9V battery is not able to fully power all three LEDs simultaneously...
   MODE
   1.) red              = red[HIGH]
-  .) tangerine orange = red[HIGH]+ green[50]
+  .) tangerine orange = 
   2.) yellow           = red[HIGH]+ green[HIGH]
   3.) green            =          + green[HIGH]
   4.) clear blue       =          + green[HIGH] + blue[HIGH]
